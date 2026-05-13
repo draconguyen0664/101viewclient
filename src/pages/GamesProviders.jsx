@@ -600,7 +600,7 @@ function GameRow({ images, speed, direction = "left", rowIndex }) {
               }}
             />
 
-            <div className="pointer-events-none absolute inset-0 rounded-[10px] bg-gradient-to-t from-black/10 via-transparent to-white/20 opacity-0 transition group-hover:opacity-100" />
+            <div className="pointer-events-none absolute inset-0 rounded-[10px] bg-gradient-to-t from-black/10 via-transparent to-white/20 opacity-0 transition group-hover:opacity-200" />
           </button>
         ))}
       </div>
