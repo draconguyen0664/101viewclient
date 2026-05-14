@@ -459,8 +459,8 @@ export default function GamesProviders() {
                     relative
                     z-20
                     flex
-                    h-[80px]
-                    w-[80px]
+                    h-[90px]
+                    w-[90px]
                     shrink-0
                     items-center
                     justify-center
