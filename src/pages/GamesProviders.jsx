@@ -44,42 +44,34 @@ const categories = [
   {
     name: "LIVE CASINO",
     icon: "/category-icons/live-casino.png",
-    bg: "from-[#efff8a] to-[#6dffd2]",
   },
   {
     name: "LOTTERY",
     icon: "/category-icons/lottery.png",
-    bg: "from-[#ff9be2] to-[#ff55b4]",
   },
   {
     name: "SLOT",
     icon: "/category-icons/slot.png",
-    bg: "from-[#c69aff] to-[#744dff]",
   },
   {
     name: "SPORT",
     icon: "/category-icons/sport.png",
-    bg: "from-[#e5f4ff] to-[#8fc8ff]",
   },
   {
     name: "CHESS",
     icon: "/category-icons/chess.png",
-    bg: "from-[#ffedaa] to-[#d9aa37]",
   },
   {
     name: "FISHING",
     icon: "/category-icons/fishing.png",
-    bg: "from-[#9eeaff] to-[#4daeff]",
   },
   {
     name: "ANIMAL ATHLETICS",
     icon: "/category-icons/animal-athletics.png",
-    bg: "from-[#ffd0a0] to-[#ff934d]",
   },
   {
     name: "E SPORT",
     icon: "/category-icons/e-sport.png",
-    bg: "from-[#c89bff] to-[#8652ff]",
   },
 ];
 
@@ -462,8 +454,8 @@ export default function GamesProviders() {
                   gap-[10px]
                 ">
                 <span
-                  className={`
-                    category-glass-circle
+                  className="
+                    category-crystal-orb
                     relative
                     z-20
                     flex
@@ -474,16 +466,20 @@ export default function GamesProviders() {
                     justify-center
                     overflow-hidden
                     rounded-full
-                    bg-gradient-to-br
-                    ${category.bg}
                     transition
                     duration-300
                     group-hover:-translate-y-1
                     group-hover:scale-105
-                  `}>
-                  <span className="category-glass-refraction" />
-                  <span className="category-glass-light" />
-                  <span className="category-glass-frost" />
+                  ">
+                  <span className="category-orb-back-glow" />
+                  <span className="category-orb-core" />
+                  <span className="category-orb-depth" />
+                  <span className="category-orb-lens" />
+                  <span className="category-orb-rim" />
+                  <span className="category-orb-highlight-main" />
+                  <span className="category-orb-highlight-soft" />
+                  <span className="category-orb-caustic" />
+                  <span className="category-orb-shine" />
 
                   <img
                     src={category.icon}
@@ -492,8 +488,8 @@ export default function GamesProviders() {
                       category-icon-image
                       relative
                       z-10
-                      h-[56px]
-                      w-[56px]
+                      h-[70px]
+                      w-[70px]
                       object-contain
                       transition
                       duration-300
